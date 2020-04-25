@@ -50,23 +50,84 @@
 }
 
 @media all and (max-width: 670px) {
+    .extra1 {
+        display: flex;
+        padding: 10px;
+        padding-top: 10px;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
     .extra1 .extra1-item {
         justify-content: center;
         margin: 1px
     }
 
     .extra1 .extra1-fitur {
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        padding: 15px;
-        justify-content: flex-start;
-        white-space: nowrap;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
     }
+
+    .extra1-fitur li {
+        width: 170px;
+        height: 310px;
+        margin: 5px;
+        margin-top: 10px;
+    }
+
+
+    .gambar-pariwisata>img {
+        width: 140px;
+    }
+
 
     .extra-container {
         flex-direction: column;
         height: auto;
+    }
+
+    .ourteam .ourteam-flex {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        flex-direction: row;
+        overflow-y: hidden;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .ourteam-flex li {
+        border: 1px solid rgba(243, 239, 240, 0.253);
+        width: 400px;
+        cursor: pointer;
+        height: 230px;
+        margin: 10px;
+        background: #ffffff;
+        box-shadow: 5px 5px 20px rgba(198, 189, 189, 0.25);
+        border-radius: 10px;
+    }
+
+    .desk-team h2 {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .desk-team .icon-peserta {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .icon-peserta span {
+        background-color: #f9a826;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin: 2px;
+        color: white;
     }
 
     .extra-container .item-extra {
